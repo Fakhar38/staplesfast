@@ -1,0 +1,185 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Staplefast</title>
+    <link rel="stylesheet" href="{% static 'css/project.css' %}">
+       <link rel="shortcut icon" href="{% static 'images/staplesfast_favicon.png' %}" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="navbar">
+        <img class="brand-name" src="{% static 'images/logo.png' %}" alt="Logo">
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+         <div class="navbar-links2">
+            <ul>
+                <a href="#"> <li>HOW IT WORKS</li></a>
+                {% if not user.is_authenticated %}
+                <a href="{% url 'core:signup' %}"> <li>REGISTER</li></a>
+                {% endif %}
+                <a href="#" id="js-header-buy-btn"> <li>BUY NOW</li></a>
+                <div class="login-div">
+                    {% if user.is_authenticated %}
+                        <a href="/accounts/logout"><li class="navigation-link navigation-login-button">LOGOUT</li></a>
+                    {% else %}
+                        <a href="/accounts/login"><li class="navigation-link navigation-login-button">LOGIN</li></a>
+                    {% endif %}
+</div>
+            </ul>
+        </div>
+        <div class="navbar-links">
+            <ul>
+               <a href="#"> <li>HOW IT WORKS</li></a>
+                {% if not user.is_authenticated %}
+               <a href="{% url 'core:signup' %}">  <li>REGISTER</li></a>
+                {% endif %}
+                <a href="#"  id="js-header-buy-btn"> <li>BUY NOW</li></a>
+                
+                <li class="navigation-link navigation-login-left-div">dsd</li>
+                {% if user.is_authenticated %}
+                <a href="/accounts/logout" class="navigation-link navigation-login-button">LOGOUT</a>
+                {% else %}
+                <a href="/accounts/login" class="navigation-link navigation-login-button">LOGIN</a>
+                {% endif %}
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+
+
+        <div class="box1">
+            <img class="fridge-image" src="{% static 'images/fridge.png' %}" alt="Fridge png">
+
+            <h2>THE PROBLEM</h2>
+            <p id="random">The new normal has changed our grocery habits. This has often reduced trips and in turn lead to mid week shortages. </p>
+
+        </div>
+
+        <div class="box2">
+            <img class="food-image" src="{% static 'images/food.png' %}" alt="Food png">
+            <h2>WHAT IF...</h2>
+            <p id="random">You could have only the most important staples delivered to your door disinfected and ready to consume. </p>
+
+        </div>
+
+        <div class="box3">
+            <img class="van-image" src="{% static 'images/van.png' %}" alt="Van png">
+            <h2 id="solution-text">THE SOLUTION</h2>
+            <p id="random2">Same day delivery of fridge staples from staplesfast.com. </p>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div class="second-content-div">
+
+
+        <div class="box1">
+
+
+            <h2 id="how-it-text">HOW IT WORKS</h2>
+            <div class="list-div">
+                <p class="grocery-text"> Each reusable box contains:</p>
+                <li class="grocery-text">8 Litres of partly skimmed Milk </li>
+                <li class="grocery-text"> 2 Loafs of wonder bread </li>
+               <li class="grocery-text"> 450 grams of brand salted butter </li>
+                <li class="grocery-text"> Dozen farm fresh eggs </li>
+                
+                 
+
+            </div>
+        </div>
+
+        <div class="box2">
+            <img class="candy-image" src="{% static 'images/candy (2).jpg' %}" alt="candy png">
+
+        </div>
+
+        <div class="box3">
+            <h1 class="price-text">$50 Including Tax and Delivery </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="button-div">
+        <button id="js-my-buy-btn" class="cart-button">Add to Cart and Pay Now</button>
+        <div id='product-component-1591813487900' style="display: none"></div>
+    </div>
+        <!-- Shopify But Button -->
+
+        <!-- End Buy Button -->
+    <div class="form-div">
+        <div class="first-div">
+            <div class="contact-info">
+                <p class="hidden-number">XXX-XXX-XXX</p>
+                <p class="email-text">info@staplefast.com</p>
+                <div class="social-icons-div">
+
+                    <div class="icons"><i class="fa fa-facebook-f"></i></div>
+                    <div class="icons"> <i class="fa fa-twitter"></i></div>
+                    <div class="icons"> <i class="fa fa-instagram"></i></div>
+
+
+                </div>
+
+                <div class="link-pages">
+                    <a href="#" class="faq-page">FAQ</a>
+                    <a href="#" class="faq-page">LEGAL</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+
+            <div class="resgister-div">
+                <p class="contact-form-text">CONTACT US</p>
+                <div class="inputs">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone Number">
+                </div>
+
+                <textarea name="" id="" cols="77" rows="10" placeholder="Please Enter Your Message"></textarea>
+                <div class="submit-button-div">   <button class="submit">Submit</button></div>
+             
+               
+                 
+            </div>
+
+
+        </div>
+        
+    </div>
+<div class="copyright-div">
+         <p class="copyright-text">Copyright © 2020 staplesfast.com Inc. All rights reserved. </p>
+         </div>
+    </div>
+    <script type="text/javascript" src="{% static 'js/clickButton.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/shopifyBuyButton.js' %}"></script> <!-- Shopify Buy Button -->
+   <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links2')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+
+</body>
+</html>

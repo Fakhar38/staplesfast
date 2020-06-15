@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staplesfast | Login </title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="shortcut icon" href="{% static 'images/staplesfast_favicon.png' %}" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/5a01f232c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+           <div class="navbar">
+        <img class="brand-name" src="{% static 'images/logo.png' %}" alt="Logo Png">
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+         <div class="navbar-links2">
+            <ul>
+                <a href="#"> <li>HOW IT WORKS</li></a>
+                <a href="register.html"> <li>REGISTER</li></a>
+                <a href="payment.html" id="js-header-buy-btn"> <li>BUY NOW</li></a>
+                <div class="login-divs">
+               <a href="login.html">  <li class="navigation-link navigation-login-button">LOGIN</li></a>
+            
+</div>
+            </ul>
+        </div>
+        <div class="navbar-links">
+            <ul>
+               <a href="#"> <li>HOW IT WORKS</li></a>
+               <a href="register.html">  <li>REGISTER</li></a>
+                <a href="payment.html" id="js-header-buy-btn"> <li>BUY NOW</li></a>
+                
+                <li class="navigation-link navigation-login-left-div">dsd</li>
+            <a href="#" class="navigation-link navigation-login-button">LOGIN</a>
+
+            </ul>
+        </div>
+    </div>
+  
+    
+    
+    <div class="login-page-div">
+        
+   
+    <div class="login-div">
+    <div class="login-div-text">
+    <h1 class="login-text">LOGIN</h1>
+    </div>
+    <div class="input-data">
+    <div class="email-div">
+   <!-- <p class="email-heading">Email</p>-->
+    <input type="email" class="email-field" placeholder="Enter your email">
+    </div>
+     <div class="password-div">
+   <!-- <p class="email-heading">Password</p>-->
+    <input type="password" class="email-field" placeholder="Enter your password">
+    </div>
+     </div>
+      </div>
+      
+      <div class="forgot-password">
+          <div class="checkbox-div">
+              <input type="checkbox" class="checkbox">
+               <p class="keep-me-login-text">
+            Keep me logged in
+          </p>
+          </div>
+          
+         
+          <div class="forgot-password-div">
+            <p class="forgot-pass-text">Forgot Password?</p>
+          </div>
+      </div>
+      
+      <div class="button-div">
+                <button class="login-button">Login</button>
+            </div>
+            
+            <div class="dont-div">
+                <p class="dont-you-text">Don't Have an Account?</p>
+                <a href="register.html" class="register">Register</a>
+            </div>
+         
+             
+                <div class="form-div">
+        <div class="first-div">
+            <div class="contact-info">
+                <div class="social-icons-div">
+
+                    <div class="icons"><i class="fa fa-facebook-f"></i></div>
+                    <div class="icons"> <i class="fa fa-twitter"></i></div>
+                    <div class="icons"> <i class="fa fa-instagram"></i></div>
+
+
+                </div>
+
+                <div class="link-pages">
+                    <a href="#" class="faq-page">FAQ</a>
+                    <a href="#" class="faq-page">LEGAL</a>
+                    <!-- Shopify But Button's div but it wont appear as display is none -->
+                    <div id='product-component-1591813487900' style="display: none"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="second-div">
+             <p class="copyright-text">Copyright © 2020 staplesfast.com Inc. All rights reserved. </p>
+        </div>
+    </div>
+          </div>
+       <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links2')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+    <script type="text/javascript" src="{% static 'js/authPagesClickButton.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/shopifyBuyButton.js' %}"></script> <!-- Shopify Buy Button -->
+</body>
+</html>

@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Staplefast | Register</title>
+      <link rel="shortcut icon" href="{% static 'images/staplesfast_favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+      <div class="navbar">
+        <img class="brand-name" src="{% static 'images/logo.png' %}" alt="Logo png">
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+         <div class="navbar-links2">
+            <ul>
+                <a href="#"> <li>HOW IT WORKS</li></a>
+                <a href="register.html"> <li>REGISTER</li></a>
+                <a href="#" id="js-header-buy-btn"> <li>BUY NOW</li></a>
+                <div class="login-div">
+               <a href="login.html">  <li class="navigation-link navigation-login-button">LOGIN</li></a>
+
+</div>
+            </ul>
+        </div>
+        <div class="navbar-links">
+            <ul>
+               <a href="#"> <li>HOW IT WORKS</li></a>
+               <a href="register.html">  <li>REGISTER</li></a>
+                <a href="#" id="js-header-buy-btn"> <li>BUY NOW</li></a>
+
+                <li class="navigation-link navigation-login-left-div">dsd</li>
+            <a href="login.html" class="navigation-link navigation-login-button">LOGIN</a>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="register-text-div">
+            <h1 class="register-text">REGISTER</h1>
+        </div>
+               <div class="input-data">
+                <div class="email-div">
+                    <div>
+
+                    </div>
+                    <p class="name">Name</p>
+                    <input type="text" class="email-field" placeholder="Enter your name" required>
+                     <p class="name">Email</p>
+                    <input type="email" class="email-field" placeholder="Enter your email">
+                     <p class="name">Address</p>
+                     <input type="text" class="email-field" placeholder="Enter your address">
+                      <p class="name">City</p>
+                      
+                      <input type="text" class="email-field" placeholder="Enter your city name">
+                       <p class="name">Postal Code</p>
+                        
+                        <input type="text" class="email-field" placeholder="Enter your postal code">
+                         <p class="name">Phone Number</p>
+                        
+                        <input type="tel" class="email-field" placeholder="Enter your phone number">
+                         <p class="name">Password</p>
+                          <input type="password" class="email-field" placeholder="Enter your password">
+                           <p class="name">Confirm Password</p>
+                          <input type="password" class="email-field" placeholder="Confirm your password">
+
+                </div>
+            </div>
+            
+            <div class="checkbox-div2">
+                <input type="checkbox" id="checkbox">
+                 <label for="checkbox">
+                   <p class="keep-me-login-text">
+                  I accept the <span>Terms of Use </span>and <span>Privacy Policy.</span>
+                </p>
+                </label>
+  
+
+                
+            </div>
+             <div class="button-div">
+                <button class="login-button">Register Now</button>
+            </div>
+            
+            <div class="dont-div">
+                <p class="dont-you-text">Already Have an Account?</p>
+                <a href="login.html" class="register">Login</a>
+            </div>
+
+
+
+        <div class="form-div">
+            <div class="first-div">
+                <div class="contact-info">
+                    <div class="social-icons-div">
+
+                        <div class="icons"><i class="fa fa-facebook-f"></i></div>
+                        <div class="icons"> <i class="fa fa-twitter"></i></div>
+                        <div class="icons"> <i class="fa fa-instagram"></i></div>
+
+
+                    </div>
+
+                    <div class="link-pages">
+                        <a href="#" class="faq-page">FAQ</a>
+                        <a href="#" class="faq-page">LEGAL</a>
+                        <!-- Shopify But Button's div but it wont appear as display is none -->
+                        <div id='product-component-1591813487900' style="display: none"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="second-div">
+                <p class="copyright-text">Copyright © 2020 staplesfast.com Inc. All rights reserved. </p>
+            </div>
+        </div>
+    </div>
+          <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+        const navbarLinks = document.getElementsByClassName('navbar-links2')[0]
+
+        toggleButton.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active')
+        })
+    </script>
+    <script type="text/javascript" src="{% static 'js/authPagesClickButton.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/shopifyBuyButton.js' %}"></script> <!-- Shopify Buy Button -->
+    </body>
+</html>

@@ -1,0 +1,1303 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+@font-face {
+    src: url(fonts/ProximaNova-Regular.otf);
+    font-family: 'Proxima';
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 2px solid black;
+    margin-bottom: 6vw;
+}
+
+.brand-name {
+    width: 10vw;
+    margin: 1vw 0vw 1vw 2vw;
+
+}
+
+
+
+.navbar-links ul {
+    display: flex;
+    list-style: none;
+    width: 50vw;
+    justify-content: center;
+
+
+}
+.navbar-links2{
+    display: none;
+}
+.navbar-links li {
+    color: black;
+    margin-right: 2.5rem;
+  
+
+
+}
+
+
+.navbar-links li:hover {
+    color: #999;
+    cursor: pointer;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: contents;
+}
+
+
+
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    display: none;
+    outline: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23px;
+    width: 30px;
+}
+
+
+.navigation-login-left-div {
+    height: 64%;
+    width: 0.3%;
+    background-color: #313131;
+}
+
+.navigation-login-button {
+    background-color: #313131;
+    color: #fff;
+    width: 16%;
+    height: 50%;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bar {
+    width: 100%;
+    border-radius: 10px;
+    height: 3px;
+    background-color: black;
+}
+.details-div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin-bottom: 2vw;
+    width: 53vw;
+}
+
+.payment-text-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5vw;
+
+}
+
+.payment-text {
+    text-decoration: underline;
+}
+
+.forgot-password {
+    display: flex;
+    background-color: #E6E6E6;
+    width: 53vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.checkbox-div {
+    display: flex;
+    align-items: center;
+
+}
+
+.radio {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.forgot-password-div {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.forgot-pass-text {
+    font-size: 2.5vw;
+    padding: 0.5vw;
+    color: black;
+}
+
+#checkbox {
+    margin-right: 1vw;
+}
+
+.email-div {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5vw;
+}
+
+.email-field {
+    width: 47vw;
+    height: 100%;
+    padding: 0.6vw;
+    border: 1px solid black;
+    margin-bottom: 1.5vw;
+    outline: none;
+
+}
+
+
+.checkbox-div2 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 47vw;
+    margin-bottom: 1vw;
+
+}
+
+.checkbox-div3 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 74%;
+}
+
+.select-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    width: 47vw;
+    margin-bottom: 1.5vw;
+}
+
+.month {
+    margin-right: 1.5vw;
+    padding: 0.5vw;
+    outline: none;
+    border: 1px solid black;
+}
+
+.year {
+    padding: 0.5vw;
+    outline: none;
+    border: 1px solid black;
+}
+
+.cvv {
+    width: 5vw;
+    padding: 0.5vw;
+    margin-right: 1vw;
+    outline: none;
+    border: 1px solid black;
+}
+
+.cvv-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16vw;
+}
+
+.info-circle {
+    margin-right: 0.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-div2 {
+    display: flex;
+    margin: auto;
+    width: 47vw;
+    margin-bottom: 1.5vw;
+
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5vw;
+}
+
+.login-button {
+    padding: 0.5vw;
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.3vw;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 47vw;
+
+
+
+}
+
+.forgot-passwords {
+    display: flex;
+    width: 53vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 2vw;
+}
+
+
+
+
+
+.radios {
+   
+    margin-right: 1vw;
+}
+
+.radios2 {
+   
+    margin-right: 1vw;
+}
+
+.radios3 {
+    
+    margin-right: 1vw;
+}
+
+
+.forgot-pass-text2 {
+    font-size: 3vw;
+    padding: 0.5vw;
+   
+    color: black;
+}
+
+.forgot-pass-texts {
+    font-size: 3vw;
+    padding: 0.5vw;
+  
+    color: black;
+}
+
+.interac {
+    width: 5vw;
+    padding: 1vw;
+
+
+}
+
+
+.form-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+    height: 100%;
+
+}
+
+.contact-info {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+
+
+}
+
+.second-div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.social-icons-div {
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+    margin-top: 1.5vw;
+}
+
+
+
+.icons {
+    font-size: 2vw;
+    cursor: pointer;
+    margin-bottom: 2.5vw;
+
+}
+
+.link-pages {
+    display: flex;
+    justify-content: space-around;
+    width: 15vw;
+    margin-bottom: 1.5vw;
+}
+
+.faq-page {
+    text-decoration: none;
+    font-size: 1.5vw;
+display: flex;
+    color: white;
+}
+
+.copyright-text {
+
+    margin-bottom: 1.5vw;
+    text-align: center;
+
+}
+
+@media only screen and (max-width:1125px) {
+
+    .payment-text {
+
+        font-size: 3vw;
+        margin-bottom: 1vw;
+    }
+    
+    
+    .navigation-login-button {
+  
+    font-size: 1.5vw;
+
+}
+    .navbar-links li {
+  
+    font-size: 1.5vw;
+}
+    .navbar-links ul {
+    
+    width: 60vw;
+   
+}
+
+    .details-div {
+        margin-bottom: 3vw;
+        width: 62vw;
+    }
+
+    .forgot-password {
+        width: 66vw;
+        padding: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    .keep-me-login-text {
+        font-size: 1.7vw;
+    }
+
+    .forgot-password-div {
+        display: flex;
+        width: 19vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .forgot-pass-text {
+        font-size: 2.5vw;
+        margin-right: 2vw;
+    }
+
+    .email-field {
+        width: 56vw;
+        padding: 1vw;
+        margin-bottom: 2.5vw;
+        font-size: 1.5vw;
+    }
+
+    .select-div {
+        width: 56vw;
+        margin-bottom: 3vw;
+    }
+
+    .month,
+    .year,
+    .cvv {
+        font-size: 1.5vw;
+    }
+
+    .cvv-div {
+        width: 29vw;
+    }
+
+    .cvv {
+        width: 7vw;
+        margin-right: 3vw;
+    }
+
+    .info-circle {
+        margin-right: 1.5vw;
+        font-size: 2vw;
+    }
+
+    .checkbox-div2 {
+        width: 56vw;
+        margin-bottom: 2vw;
+
+    }
+
+    .login-button {
+        padding: 1vw;
+        font-size: 2vw;
+        margin-bottom: 1vw;
+    }
+
+    .forgot-passwords {
+        width: 62vw;
+        padding: 1vw;
+        margin-bottom: 3vw;
+    }
+
+    .radios3 {
+        
+        margin-right: 1vw;
+    }
+
+    .forgot-pass-texts {
+        font-size: 4vw;
+        
+    }
+
+    .forgot-pass-text2 {
+        font-size: 4vw;
+     
+    }
+
+    .interac {
+        width: 7vw;
+      
+    }
+}
+
+@media only screen and (min-width:1280px) and (min-height:800px) {
+    .forgot-pass-text {
+        font-size: 2.5vw;
+        padding: 0.5vw;
+        color: black;
+        margin-right: 1vw;
+    }
+
+    .email-field {
+        width: 47vw;
+        height: 100%;
+        padding: 0.8vw;
+        border: 1px solid black;
+        margin-bottom: 1.5vw;
+        outline: none;
+    }
+
+    .email-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vw;
+    }
+
+    .forgot-pass-texts {
+        font-size: 3vw;
+        padding: 0.5vw;
+     
+        color: black;
+    }
+
+    .forgot-pass-text2 {
+        font-size: 3vw;
+        padding: 0.5vw;
+       
+        color: black;
+    }
+
+    .interac {
+        width: 5vw;
+        padding: 1vw;
+      
+    }
+
+    .radios3 {
+      
+        margin-right: 1vw;
+    }
+}
+
+@media only screen and (min-width:1440px) {
+    .navbar-links li {
+        color: black;
+        margin-right: 3.5rem;
+        font-size: 1.7vw;
+    }
+    
+    .navigation-login-button {
+    background-color: #313131;
+    color: #fff;
+    width: 16%;
+    height: 50%;
+    font-size: 1.7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+    
+    .navbar-links ul{
+        width: 60vw;
+    }
+
+    .payment-text {
+        font-size: 3vw;
+    }
+
+    .keep-me-login-text {
+        font-size: 1.5vw;
+    }
+
+    .radio,
+    .radios3,
+    .radios2,
+    .radios {
+        width: 1vw;
+        height: 1vw;
+
+    }
+
+    .details-div,
+    .forgot-passwords {
+
+        border: 2px solid black;
+
+    }
+
+    #checkbox {
+        width: 1vw;
+        height: 1vw;
+    }
+
+    .email-field {
+        width: 47vw;
+        height: 100%;
+        font-size: 1.4vw;
+        padding: 0.8vw;
+        border: 2px solid black;
+        margin-bottom: 1.5vw;
+        outline: none;
+    }
+
+    .month,
+    .year,
+    .cvv {
+
+
+        font-size: 1.4vw;
+
+        border: 2px solid black;
+    }
+
+    .info-circle {
+
+        font-size: 1.5vw;
+
+    }
+
+    p {
+        font-size: 1.4vw;
+    }
+
+    .login-button {
+        padding: 0.5vw;
+
+        font-size: 1.5vw;
+
+
+    }
+
+    .forgot-pass-texts {
+        font-size: 3vw;
+        padding: 0.5vw;
+     
+
+    }
+
+    .forgot-pass-text2 {
+        font-size: 3vw;
+        padding: 0.5vw;
+      
+        color: black;
+    }
+
+    .interac {
+        width: 5vw;
+        
+       
+    }
+}
+
+@media only screen and (min-width:2560px){
+.navbar-links li {
+    color: black;
+    margin-right: 5.5rem;
+    font-size: 1.7vw;
+}
+}
+@media only screen and (max-width:850px) {
+    .brand-name {
+        width: 17vw;
+    }
+    
+    
+    .navbar-links li {
+    font-size: 2vw;
+    margin-right: 4.3vw;
+}
+    
+    .navigation-login-button {
+  
+    font-size: 2vw;
+  
+  
+}
+    
+    
+    .navbar-links ul {
+
+    width: 71vw;
+  
+}
+
+    .payment-text-div {
+        margin-bottom: 3.5vw;
+        font-size: 2vw;
+    }
+
+    .details-div {
+        margin-bottom: 5vw;
+        width: 81vw;
+    }
+
+    .forgot-password {
+        width: 81vw;
+        padding: 1vw;
+
+    }
+
+    .checkbox-div {
+
+        width: 79vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    .radio {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .forgot-password-div {
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+    }
+
+    .forgot-pass-text {
+        font-size: 3.5vw;
+     
+    }
+
+    .input-data {
+        margin-bottom: 1vw;
+    }
+
+    .email-div {
+
+        margin-top: 3vw;
+    }
+
+    .checkbox-div2 {
+
+        width: 81vw;
+        margin: auto;
+
+    }
+
+    .email-field {
+        width: 66vw;
+        padding: 1.2vw;
+        margin-bottom: 2.5vw;
+        font-size: 2vw;
+
+    }
+
+    .select-div {
+        width: 66vw;
+        margin-bottom: 3vw;
+    }
+
+    .month {
+        margin-right: 2.5vw;
+
+
+    }
+
+    .month,
+    .year,
+    .cvv {
+        font-size: 2vw;
+    }
+
+    .cvv-div {
+        width: 35vw;
+    }
+
+
+
+    .cvv {
+        width: 10vw;
+
+        margin-right: 3vw;
+
+    }
+
+    .info-circle {
+        margin-right: 1.5vw;
+        font-size: 2.4vw;
+    }
+
+    .checkbox-div2 {
+
+        width: 66vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    #checkbox {
+        margin-right: 2vw;
+    }
+
+    .button-div {
+        margin-bottom: 2.5vw;
+        margin-top: 3vw;
+    }
+
+    .login-button {
+        padding: 1.33vw;
+
+        font-size: 2.4vw;
+
+        width: 66vw;
+    }
+
+    .keep-me-login-text {
+        font-size: 2vw;
+    }
+
+    .forgot-passwords {
+        width: 81vw;
+
+        padding: 1vw;
+
+        margin-bottom: 5vw;
+    }
+
+    .checkbox-div {
+        display: flex;
+        margin: auto;
+        width: 79vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    .radios3,
+    .radios2,
+    .radios {
+       
+        margin-right: 2vw;
+    }
+
+ 
+
+    .forgot-pass-texts {
+        font-size: 5vw;
+      
+
+    }
+
+    .forgot-pass-text2 {
+        font-size: 5vw;
+
+
+
+    }
+
+    .interac {
+        width: 7vw;
+      
+    }
+
+    .icons {
+        font-size: 4vw;
+
+    }
+
+    .social-icons-div {
+
+        width: 22vw;
+    }
+
+    .faq-page {
+
+        font-size: 2.5vw;
+    }
+
+    .copyright-text {
+        font-size: 2.3vw;
+    }
+
+    .link-pages {
+
+        width: 30vw;
+
+    }
+
+    .navbar-links li {
+        font-size: 2vw;
+    }
+
+    
+}
+
+
+@media only screen and (max-width:500px) {
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        height: 19px;
+        width: 25px;
+        top: 3vw;
+    }
+
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+       
+        margin-bottom: 13vw;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+
+
+    .navbar-links2 ul {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .navbar-links2 li {
+        padding: 3vw;
+         overflow: hidden;
+        text-align: center;
+        font-size: 3.5vw;
+    }
+
+    .navbar-links2.active {
+        display: flex;
+        
+        width: 100%
+    }
+    
+   .login-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+    height: 20%;
+}
+.navigation-login-button {
+    background-color: #313131;
+    color: #fff;
+    width: 19%;
+    height: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+    
+    .brand-name {
+        width: 18vw;
+    }
+
+
+    .payment-text {
+        font-size: 5vw;
+        margin-bottom: 1vw;
+    }
+
+    .details-div {
+        margin-bottom: 5vw;
+        width: 93vw;
+    }
+
+    .forgot-password {
+        width: 93vw;
+        padding: 1vw;
+
+    }
+
+    .checkbox-div {
+
+        width: 79vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    .radio {
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .forgot-password-div {
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+    }
+
+    .forgot-pass-text {
+        font-size: 4.5vw;
+        margin-right: 2vw;
+    }
+
+    .input-data {
+        margin-bottom: 1vw;
+    }
+
+    .email-div {
+
+        margin-top: 3vw;
+    }
+
+    .checkbox-div2 {
+
+        width: 81vw;
+        margin: auto;
+
+    }
+
+    .email-field {
+        width: 81vw;
+        padding: 1.2vw;
+        margin-bottom: 2.5vw;
+
+    }
+
+    .select-div {
+        width: 81vw;
+        margin-bottom: 3vw;
+    }
+
+    .month {
+        margin-right: 2.5vw;
+
+    }
+
+    .cvv-div {
+        width: 35vw;
+    }
+
+    .checkbox-div3 {
+
+        width: 79vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    .cvv {
+        width: 10vw;
+
+        margin-right: 3vw;
+
+    }
+
+    .info-circle {
+        margin-right: 1.5vw;
+
+    }
+
+    .checkbox-div {
+
+        width: 79vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    #checkbox {
+        margin-right: 2vw;
+    }
+
+    .button-div {
+        margin-bottom: 2.5vw;
+        margin-top: 3vw;
+    }
+
+    .login-button {
+        padding: 1.33vw;
+
+        font-size: 2.6vw;
+
+        width: 81vw;
+    }
+
+    .keep-me-login-text {
+        font-size: 2.8vw;
+    }
+
+    .forgot-passwords {
+        width: 93vw;
+
+        padding: 1vw;
+
+        margin-bottom: 5vw;
+    }
+
+    .checkbox-div {
+        display: flex;
+        margin: auto;
+        width: 79vw;
+        /* margin-bottom: 1.5vw; */
+    }
+
+    .radios3,
+    .radios2,
+    .radios {
+        margin-left: 2.4vw;
+        margin-right: 2vw;
+    }
+
+    .forgot-password-div {
+        display: flex;
+        width: 20vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .forgot-pass-texts {
+        font-size: 6vw;
+        margin-left: 6vw;
+
+    }
+
+    .forgot-pass-text2 {
+        font-size: 5vw;
+
+        margin-left: 6vw;
+
+
+    }
+
+    .interac {
+        width: 8vw;
+        margin-left: 6vw;
+        margin-right: 0.5vw;
+    }
+
+    .social-icons-div {
+        display: flex;
+        justify-content: space-around;
+        width: 26vw;
+        margin-top: 3vw;
+    }
+
+
+
+    .icons {
+        font-size: 4vw;
+        cursor: pointer;
+        margin-bottom: 2.5vw;
+
+    }
+
+    .link-pages {
+        display: flex;
+        justify-content: space-around;
+        width: 32vw;
+        margin-bottom: 2vw;
+    }
+
+    .faq-page {
+        text-decoration: none;
+        font-size: 3vw;
+
+        color: white;
+    }
+
+
+    .copyright-text {
+        font-size: 2.5vw;
+        margin-right: 1.5vw;
+
+
+
+    }
+
+}
+
+
+@media only screen and (max-width:430px) {
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        height: 17px;
+        width: 19px;
+        top: 5vw;
+    }
+
+
+    .brand-name {
+        width: 23vw;
+    }
+
+
+}
+
+@media only screen and (max-width:400px) {
+    .keep-me-login-text {
+        font-size: 3vw;
+    }
+
+    .forgot-pass-text {
+        font-size: 5vw;
+
+    }
+
+    .month {
+        margin-right: 3.5vw;
+    }
+
+    .cvv-div {
+        width: 40vw;
+    }
+
+    .login-button {
+
+        font-size: 3vw;
+
+    }
+
+    .interac {
+        width: 9vw;
+
+    }
+
+    .email-field {
+
+        font-size: 3vw;
+        margin-bottom: 3vw;
+    }
+
+    .navbar {
+
+        margin-bottom: 6vw;
+    }
+
+}
+
+@media only screen and (max-width:385px) {
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        height: 17px;
+        width: 19px;
+        top: 4.5vw;
+    }
+
+    .payment-text {
+        font-size: 6vw;
+        margin-bottom: 1vw;
+    }
+
+    .brand-name {
+        width: 23vw;
+    }
+
+    .info-circle {
+        margin-right: 1.5vw;
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .year,
+    .month,
+    .cvv {
+        font-size: 3.5vw;
+    }
+
+    .cvv {
+        width: 11vw;
+    }
+}
+
+
+@media only screen and (max-width:310px) {
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+        height: 15px;
+        width: 17px;
+        top: 3.5vw;
+    }
+
+
+
+    .brand-name {
+        width: 23vw;
+    }
+
+    .payment-text {
+        font-size: 7vw;
+        margin-bottom: 1vw;
+    }
+}
+
+@media only screen and (max-width:280px) {
+    .year {
+        margin-right: 2vw;
+    }
+}
